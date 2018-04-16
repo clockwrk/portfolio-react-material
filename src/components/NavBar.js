@@ -1,7 +1,14 @@
 import React, { Component } from 'react';
 import { Navbar, NavbarBrand, NavbarNav, NavbarToggler, Collapse, NavItem, NavLink, Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'mdbreact';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import Home from './Home.js'
+import Home from './Home.js';
+import Contact from './Contact.js';
+import About from './About.js';
+import AllProjects from './ProjectsContainer.js'
+import SingleProject from './SingleProject.js'
+import projectData from '../data/projects';
+
+console.log(projectData)
 
 class NavBar extends React.Component {
     constructor(props) {
@@ -69,6 +76,9 @@ class NavBar extends React.Component {
                 </Navbar>
                 <hr />
                 <Route exact path="/" component={Home} />
+                <Route exact path="/about" component={About} />
+                <Route exact path="/contact" component={Contact} />
+                <Route exact path="/projects" component={AllProjects} />
                 </div>
             </Router>
         );

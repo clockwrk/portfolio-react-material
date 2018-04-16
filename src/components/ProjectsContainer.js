@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-class Project extends React.Component {
+class ProjectsContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -9,10 +9,10 @@ class Project extends React.Component {
   render() {
     return (
       <div>
-      <h1>Single Project</h1>
+      <h1>Projects</h1>
       </div>
     )
   }
 }
 
-export default Project;
+export default ProjectsContainer;
